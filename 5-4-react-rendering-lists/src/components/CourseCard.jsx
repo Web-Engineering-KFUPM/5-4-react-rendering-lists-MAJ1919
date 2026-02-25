@@ -42,6 +42,7 @@ export default function CourseCard({ course, index, onMutateCourse }) {
       </header>
 
       <section className="tasksSection">
+        {!hasTasks && <p className="empty">No tasks</p>}
 
         {/* DISPLAY ONLY: Show a message when there are no tasks */}
         
